@@ -15,6 +15,7 @@ system. You must also provide a valid email address for the admin.
 ---------------------------------------------------------------------
 
 USAGE:
+------
 
 [user@host]# ./rk_report
 
