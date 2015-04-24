@@ -1,6 +1,6 @@
                            Rootkit Reporter
 
-Andrew Taylor <ataylor> (at) <phr3ak> (dot) <org> (Developer)
+Andrew Taylor <ataylor> (at) phr3ak (dot) org (Developer)
 
 rk_report is a perl script that scans the output of the 3rd party 
 applications chkrootkit (http://www.chkrootkit.org/) and rkhunter.
