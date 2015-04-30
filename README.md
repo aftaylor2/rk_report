@@ -32,10 +32,10 @@ LICENSE
 System Requirments
 ------------------
 
-chkrootkit - To scan system for rootkits
-rkhunter - To scan system for rootkits
-perl - To run the rk_report script
-sendmail - To alert the admin via email
+chkrootkit - To scan system for rootkits<br />
+rkhunter - To scan system for rootkits<br />
+perl - To run the rk_report script<br />
+sendmail - To alert the admin via email<br />
 
 Acknowledgements
 ---------------
