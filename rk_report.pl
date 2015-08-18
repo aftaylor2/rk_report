@@ -57,18 +57,17 @@ foreach $file_data(@file_data) {
 if ($status eq 1) {
 #### SEND EMAIL ####
     print "Sending email to $email_admin\n";
-open(SENDMAIL, "|$sendmail -oi -t") or die "Cannot open $sendmail: $!"; 
-print SENDMAIL "From: no-reply\@$host\n";
-print SENDMAIL "To: $email_admin\n";
-print SENDMAIL "Subject: $subject\n\n";
-print SENDMAIL "POSSIBLE ROOT KIT DETECTED on $host\n\n";
-print SENDMAIL "IP Address: $address\n";
-print SENDMAIL "Host Uptime: $uptime";
-print SENDMAIL "Logged In Users: $users\n";
-#print SENDMAIL "@file_data\n";	# Send complete scan results
-close(SENDMAIL);
-exit 0;
-
+    open(SENDMAIL, "|$sendmail -oi -t") or die "Cannot open $sendmail: $!"; 
+    print SENDMAIL "From: no-reply\@$host\n";
+    print SENDMAIL "To: $email_admin\n";
+    print SENDMAIL "Subject: $subject\n\n";
+    print SENDMAIL "POSSIBLE ROOT KIT DETECTED on $host\n\n";
+    print SENDMAIL "IP Address: $address\n";
+    print SENDMAIL "Host Uptime: $uptime";
+    print SENDMAIL "Logged In Users: $users\n";
+    #print SENDMAIL "@file_data\n";	# Send complete scan results
+    close(SENDMAIL);
+    exit 0;
 } else {
     print "No Infection Found!\n";
     exit 0;
